@@ -38,7 +38,7 @@ export default function Business() {
 
       const handleScroll = () => {
         const offset = window.scrollY;
-        if (offset > 500) {
+        if (offset > 300) {
           setShowPasta(true);
         }
         if (offset > 500) {
@@ -55,6 +55,7 @@ export default function Business() {
     
   }, []);
 
+  
   return (
    <>
     <div className="business-page">
@@ -96,6 +97,8 @@ export default function Business() {
           />
         ))}
     </div>
+    </div>
+    <div className="container">
     <div className="text-center my-3 py-2">
         <h1
           className="h1 text-centre my-3"
@@ -105,41 +108,44 @@ export default function Business() {
         </h1>
       </div>
 
-     <div className="pasta-container my-5">
+     <div className="pasta-container2 my-5">
         <img
           src={partners}
-          className={`rounded mx-auto d-block image-animation pasta-image ${
+          className={`rounded mx-auto d-block image-animation2 pasta-image2 ${
             showPasta ? "show" : ""
           }`}
           alt="pasta"
           style={{ width: "45%" }}
         />
         <div
-          className={`text-top-left text-animation ${showText ? "show" : ""}`}
+          className={`text-top-left2 text-animation2 ${showText ? "show" : ""}`}
         >
           <p>Sell your surplus food instead of throwing it away, contributing to sustainability efforts</p>
         </div>
         <div
-          className={`text-top-right text-animation ${showText ? "show" : ""}`}
+          className={`text-top-right2 text-animation2 ${showText ? "show" : ""}`}
         >
           <p>Generate additional income from food that would otherwise be discarded.</p>
         </div>
         <div
-          className={`text-bottom-left text-animation ${
+          className={`text-bottom-left2 text-animation2 ${
             showText ? "show" : ""
           }`}
         >
           <p> Reach a wider audience by connecting with new business partners looking for quality surplus food.</p>
         </div>
         <div
-          className={`text-bottom-right text-animation ${
+          className={`text-bottom-right2 text-animation2 ${
             showText ? "show" : ""
           }`}
         >
           <p>Enhance your brand's reputation by demonstrating commitment to reducing food waste and supporting the community</p>
         </div>
       </div>
-      <footer className="footer my-3">
+      </div>
+      
+    
+    <footer className="footer my-3">
       <div className="footer-section">
         <h4>SlickSpoon</h4>
         <img
@@ -180,8 +186,6 @@ export default function Business() {
         </p>
       </div>
     </footer>
-    </div>
-    
    </>
   );
 };

@@ -39,7 +39,7 @@ export default function Main() {
 
   return (
     <>
-      <div className="position-relative overflow-hidden min-vh-100">
+      <div className="position-relative overflow-hidden ">
         <img
           src={leaf3}
           className="rounded float-start"
@@ -147,55 +147,60 @@ export default function Main() {
         </div>
       </div>
       <div
-        className="background-image d-flex align-items-center "
+        className="background-image5 d-flex align-items-center justify-content-center "
         style={{
           backgroundImage: `url(${bg4})`,
           backgroundSize: "cover",
           height: "80vh",
         }}
       >
+        
         <h1 className="offer text-center">HURRY UP!</h1>
         <h1 className="offer2 text-center">DEAL OF THE DAY</h1>
 
         <DealTimer endTime={dealEndTime} />
       </div>
+    
       <div className="special container">
-        <div className="row">
-          <div className="draw card mx-4">
-            <img
-              src={item1}
-              style={{ width: "100%", height: "50%" }}
-              className="card-img-top"
-              alt="..."
-            />
-            <div className="card-body">
-              <p className="card-text">Punjabi Chaap - Rs. 60</p>
-            </div>
-          </div>
-          <div className="draw card mx-4">
-            <img
-              src={item2}
-              style={{ width: "100%", height: "50%" }}
-              className="card-img-top"
-              alt="..."
-            />
-            <div className="card-body">
-              <p className="card-text">Veg Momos - Rs. 50</p>
-            </div>
-          </div>
-          <div className="draw card mx-4">
-            <img
-              src={item3}
-              style={{ width: "100%", height: "50%" }}
-              className="card-img-top"
-              alt="..."
-            />
-            <div className="card-body">
-              <p className="card-text">Idli Sambat - Rs. 90</p>
-            </div>
-          </div>
+  <div className="row justify-content-center">
+    <div className="col-12 col-sm-6 col-md-4 mb-4">
+      <div className="draw card">
+        <img
+          src={item1}
+          className="card-img-top"
+          alt="Punjabi Chaap"
+        />
+        <div className="card-body">
+          <p className="card-text"> Chaap - Rs. 60</p>
         </div>
       </div>
+    </div>
+    <div className="col-12 col-sm-6 col-md-4 mb-4">
+      <div className="draw card">
+        <img
+          src={item2}
+          className="card-img-top"
+          alt="Veg Momos"
+        />
+        <div className="card-body">
+          <p className="card-text">Veg Momos - Rs. 50</p>
+        </div>
+      </div>
+    </div>
+    <div className="col-12 col-sm-6 col-md-4 mb-4">
+      <div className="draw card">
+        <img
+          src={item3}
+          className="card-img-top"
+          alt="Idli Sambat"
+        />
+        <div className="card-body">
+          <p className="card-text">Idli Sambat - Rs. 90</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       <footer className="footer my-3">
       <div className="footer-section">
         <h4>SlickSpoon</h4>

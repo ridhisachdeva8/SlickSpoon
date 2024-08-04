@@ -30,27 +30,27 @@ export default function AddNewItems() {
   
   return (
   <>
-  <div className="big-container" style={{display:"flex"}}>
-  <div className="container">
+  <div className="big-container" >
+  <div className="container4">
   <h2><span className="heading1" style={{fontFamily:"Playfair Display"}}>Add</span> <span className="heading2" style={{fontFamily:"Playfair Display", color:"#d03131"}}>New Items</span></h2>
      
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className="form-group4">
           <label htmlFor="itemName">Item Name</label>
           <input
             type="text"
             id="itemName"
             value={itemName}
             onChange={(e) => setItemName(e.target.value)}
-            className="form-control"
+            className="form-control4"
             placeholder="Enter item name"
           />
         </div>
 
-        <div className="form-group">
+        <div className="form-group4">
           <label htmlFor="itemImages">Images</label>
-          <div className="images-row">
-            <div className="images-box">
+          <div className="images-row4">
+            <div className="images-box4">
               {images.length === 0 ? (
                 <p>No images added</p>
               ) : (
@@ -64,28 +64,28 @@ export default function AddNewItems() {
                 ))
               )}
             </div>
-            <div className="add-image-box">
-              <label htmlFor="fileInput" className="add-image-label">+</label>
+            <div className="add-image-box4">
+              <label htmlFor="fileInput" className="add-image-label4">+</label>
               <input
                 type="file"
                 id="fileInput"
                 multiple
                 accept="image/*"
                 onChange={handleAddImage}
-                className="file-input"
+                className="file-input4"
               />
             </div>
           </div>
         </div>
 
-        <div className="form-group">
+        <div className="form-group4">
           <label htmlFor="itemPrice">Price</label>
           <input
             type="number"
             id="itemPrice"
             value={price}
             onChange={(e) => setPrice(e.target.value)}
-            className="form-control"
+            className="form-control4"
             placeholder="Enter price"
           />
 
@@ -94,7 +94,7 @@ export default function AddNewItems() {
 
     
 
-        <div className="form-group" style={{display:"flex",gap:"2%"}}>
+        <div className="form-group4" style={{display:"flex",gap:"2%"}}>
          
           <input
             type="checkbox"
@@ -102,37 +102,37 @@ export default function AddNewItems() {
             checked={pickupOption}
             onChange={(e) => setPickupOption(e.target.checked)}
           />
-          <label htmlFor="pickupOption" className="checkbox-label">Pickup</label>
+          <label htmlFor="pickupOption" className="checkbox-label4">Pickup</label>
           <input
             type="checkbox"
             id="deliveryOption"
             checked={deliveryOption}
             onChange={(e) => setDeliveryOption(e.target.checked)}
           />
-          <label htmlFor="deliveryOption" className="checkbox-label">Delivery</label>
+          <label htmlFor="deliveryOption" className="checkbox-label4">Delivery</label>
         </div>
        
 
        
 
-        <div className="form-group">
-          <label htmlFor="itemDetails">Details</label>
+        <div className="form-group4">
+          <label htmlFor="itemDetails">Details </label>
           <textarea
             id="itemDetails"
             value={details}
             onChange={(e) => setDetails(e.target.value)}
-            className="form-control"
+            className="form-control4"
             placeholder="Enter details"
             rows={3}
           ></textarea>
         </div>
 
-        <button type="submit" className="submit-button">Save Changes</button>
+        <button type="submit" className="submit-button4">Save Changes</button>
       </form>
       </div>
-      <div className="ellipse">
+      <div className="ellipse4">
        
-        <img src={ellipse} alt="ellipse" style={{marginLeft:"8%"}} />
+        <img src={ellipse} alt="ellipse" />
         <img src={item} alt="item" />
 
     </div>

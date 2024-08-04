@@ -40,13 +40,14 @@ export default function Menu() {
           We consider all the drivers of change gives you the components you
           need to change to create a truly happens.
         </p>
-        <div className="option mb-3" style={{ display: "flex", gap: "20px" }}>
-          <button>All</button>
-          <button>Breakfast</button>
-          <button>Main Dishes</button>
-          <button>Drinks</button>
-          <button>Desserts</button>
-        </div>
+        <div className="option mb-3">
+  <button type="button">All</button>
+  <button type="button">Breakfast</button>
+  <button type="button">Main Dishes</button>
+  <button type="button">Drinks</button>
+  <button type="button">Desserts</button>
+</div>
+
       </div>
      
       <div id="carouselExampleInterval" className="carousel slide my-5" data-bs-ride="carousel">

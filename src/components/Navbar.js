@@ -58,14 +58,15 @@ export default function Navbar() {
               </li>
               <li className="nav-item" style={{ paddingTop: "10px" }}>
                 <Link
-                  class="btn btn-primary"
+                  className="btn btn-primary"
                   to="/signin"
                   role="button"
-                  style={{
+                  style= {{
                     backgroundColor: "#D03131",
                     border: "0",
                     borderRadius: "20px",
                   }}
+                
                 >
                   Sign in
                 </Link>

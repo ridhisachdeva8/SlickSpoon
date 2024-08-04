@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SlickSpoon/static/css/main.e7d35a0b.css",
+    "main.css": "/SlickSpoon/static/css/main.d3cbc977.css",
     "main.js": "/SlickSpoon/static/js/main.63738e25.js",
     "static/js/453.c5c9d70b.chunk.js": "/SlickSpoon/static/js/453.c5c9d70b.chunk.js",
     "static/media/partners.jpg": "/SlickSpoon/static/media/partners.90f4598bf66dde87f420.jpg",
@@ -50,12 +50,12 @@
     "static/media/food25.jpeg": "/SlickSpoon/static/media/food25.622c446deaecf764f02e.jpeg",
     "static/media/food24.jpeg": "/SlickSpoon/static/media/food24.6925add75d1a0d93f537.jpeg",
     "index.html": "/SlickSpoon/index.html",
-    "main.e7d35a0b.css.map": "/SlickSpoon/static/css/main.e7d35a0b.css.map",
+    "main.d3cbc977.css.map": "/SlickSpoon/static/css/main.d3cbc977.css.map",
     "main.63738e25.js.map": "/SlickSpoon/static/js/main.63738e25.js.map",
     "453.c5c9d70b.chunk.js.map": "/SlickSpoon/static/js/453.c5c9d70b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7d35a0b.css",
+    "static/css/main.d3cbc977.css",
     "static/js/main.63738e25.js"
   ]
 }

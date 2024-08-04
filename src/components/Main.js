@@ -155,7 +155,7 @@ export default function Main() {
         }}
       >
         
-        <h1 className="offer text-center">HURRY UP!</h1>
+        {/* <h1 className="offer text-center">HURRY UP!</h1> */}
         <h1 className="offer2 text-center">DEAL OF THE DAY</h1>
 
         <DealTimer endTime={dealEndTime} />
